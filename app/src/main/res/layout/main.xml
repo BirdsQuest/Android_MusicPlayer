@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.birdsquest.musicplayer.Main">
+    <com.birdsquest.musicplayer.Controls
+        xmlns:controls="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        controls:showArtBig="false"
+        controls:showArtSmall="false"
+        controls:showStop="true"
+        controls:showRec="false"
+        controls:secondRow="false"
+        controls:thirdRow="false"
+    />
+</RelativeLayout>

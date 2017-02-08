@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Controls">
+        <attr name="showArtBig" format="boolean" value="true"/>
+        <attr name="showArtSmall" format="boolean" value="true"/>
+        <attr name="showSeek" format="boolean" value="true"/>
+        <attr name="showStop" format="boolean" value="true"/>
+        <attr name="showRec" format="boolean" value="true"/>
+        <attr name="secondRow" format="boolean" value="true"/>
+        <attr name="thirdRow" format="boolean" value="true"/>
+    </declare-styleable>
+</resources>

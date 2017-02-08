@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+	<ImageView	 android:id="@+id/albumArtBig"
+				 android:src="@drawable/media_albumart"
+				 android:layout_width="fill_parent"
+				 android:layout_height="wrap_content"
+				 android:layout_alignParentTop="true"/>
+	<SeekBar	 android:id="@+id/seekBar"
+				 android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:layout_below="@+id/albumArtBig"/>
+	<!-- First Row ~ Prev Play/Pause Stop Next Rec -->
+	<LinearLayout android:id="@+id/control_firstRow"
+				  xmlns:android="http://schemas.android.com/apk/res/android"
+				  xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:layout_below="@+id/seekBar">
+		<ImageView	android:id="@+id/albumArtSmall"
+					android:src="@drawable/media_albumart"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:adjustViewBounds="true"
+					android:scaleType="centerInside"
+					android:layout_weight="1"
+		/>
+		<ImageView  android:id="@+id/control_prev"
+					android:src="@drawable/media_prevbutton"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+		<ImageView  android:id="@+id/control_playpause"
+					android:src="@drawable/media_pause"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+				  	android:layout_weight="1"/>
+		<ImageView  android:id="@+id/control_stop"
+					android:src="@drawable/media_stop"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+		<ImageView  android:id="@+id/control_next"
+					android:src="@drawable/media_next"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+		<ImageView  android:id="@+id/control_rec"
+					android:src="@drawable/media_rec"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+	</LinearLayout>
+<!-- Second Row ~ Repeat Shuffle VolDown VolUp Mute -->
+	<LinearLayout   android:id="@+id/control_secondRow"
+					xmlns:android="http://schemas.android.com/apk/res/android"
+            		xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal"
+            		android:layout_width="match_parent"
+        		    android:layout_height="wrap_content"
+					android:layout_below="@+id/control_firstRow"
+					android:layout_weight="1">
+		<ImageView  android:id="@+id/control_repeat"
+					android:src="@drawable/media_repeat"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_weight="1"/>
+		<ImageView  android:id="@+id/control_shuffle"
+					android:src="@drawable/media_shuffle"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_weight="1"/>
+		<ImageView  android:id="@+id/control_voldown"
+					android:src="@drawable/media_voldown"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_weight="1"/>
+		<ImageView  android:id="@+id/control_volup"
+					android:src="@drawable/media_volup"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_weight="1"/>
+		<ImageView  android:id="@+id/control_mute"
+					android:src="@drawable/media_mute"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_weight="1"/>
+	</LinearLayout>
+<!-- Third Row ~ Back Download Eject Folder Favorite -->
+	<LinearLayout   android:id="@+id/control_thirdRow"
+					xmlns:android="http://schemas.android.com/apk/res/android"
+            		xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal"
+            		android:layout_width="match_parent"
+        		    android:layout_height="wrap_content"
+					android:layout_below="@+id/control_secondRow"
+					android:layout_weight="1">
+		<ImageView  android:id="@+id/control_back"
+					android:src="@drawable/media_back"
+					android:onClick=""
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_weight="1"/>
+		<ImageView  android:id="@+id/control_download"
+					android:src="@drawable/media_download"
+					android:onClick=""
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_weight="1"/>
+		<ImageView  android:id="@+id/control_eject"
+					android:src="@drawable/media_eject"
+					android:onClick=""
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_weight="1"/>
+		<ImageView  android:id="@+id/control_folder"
+					android:src="@drawable/media_folder"
+					android:onClick=""
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_weight="1"/>
+		<ImageView  android:id="@+id/control_favorite"
+					android:src="@drawable/media_favorite"
+					android:onClick=""
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+	</LinearLayout>
+</RelativeLayout>

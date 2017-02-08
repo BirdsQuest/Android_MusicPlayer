@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+          android:scaleHeight="50%"
+          android:scaleWidth="50%"
+          android:drawable="@drawable/media_downloadalt" /> <!-- pressed -->
+    <item android:state_focused="true"
+          android:scaleHeight="50%"
+          android:scaleWidth="50%"
+          android:drawable="@drawable/media_downloadalt" /> <!-- focused -->
+    <item android:scaleHeight="50%"
+          android:scaleWidth="50%"
+          android:drawable="@drawable/media_downloadbutton" /> <!-- default -->
+</selector>
